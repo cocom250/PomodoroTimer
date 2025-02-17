@@ -7,12 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Pomodoro Timer</h1>
-    <div id="timer">
-        <p id = "time">25:00</p>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <div id="timer">
+            <p id = "time">25:00</p>
+        </div>
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
     </div>
-    <button id="start">Start</button>
-    <button id="reset">Reset</button>
+
+    <div id="tasks">
+        <h2>Task List</h2>
+        <ul id="taskList">
+            
+        </ul>
+        <input type="text" id="newTask" placeholder="Add a new task...">
+        <button id="addTaskBtn">Add Task</button>
+    </div>
+
 
     <script src="script.js"></script>
 
