@@ -1,12 +1,7 @@
 let timer;
 let timeRemaining = 25 * 60;
 
-const startBttn = document.getElementById("start");
 const timeDisplay = document.getElementById("time");
-const resetBttn = document.getElementById("reset");
-
-startBttn.addEventListener("click", startTimer);
-resetBttn.addEventListener("click", stopTimer)
 
 function startTimer() {
     if(timer) clearInterval(timer);
@@ -30,4 +25,28 @@ function stopTimer() {
     clearInterval(timer);
     timeRemaining = 25 * 60;
     timeDisplay.textContent = `25:00`;
+}
+
+// Task List Functions
+
+const taskList = document.getElementById("taskList");
+const taskInput = document.getElementById("newTask");
+
+function addTask() {
+    const text = taskInput.value.trim();
+    if(text) {
+        const li = document.createElement("li");
+
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.classList.add("taskCheckbox");
+
+        const label = document.createElement("label");
+        label.textContent = text;
+
+        li.appendChild(checkbox);
+        li.appendChild(label);
+        taskList.appendChild(li);
+        taskInput.value = "";
+    }
 }

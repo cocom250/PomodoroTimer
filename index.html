@@ -12,17 +12,17 @@
         <div id="timer">
             <p id = "time">25:00</p>
         </div>
-        <button id="start">Start</button>
-        <button id="reset">Reset</button>
+        <button id="start" onclick="startTimer()">Start</button>
+        <button id="reset" onclick="stopTimer()">Reset</button>
     </div>
 
     <div id="tasks">
         <h2>Task List</h2>
-        <ul id="taskList">
-            
-        </ul>
         <input type="text" id="newTask" placeholder="Add a new task...">
-        <button id="addTaskBtn">Add Task</button>
+        <button id="addTaskBttn" onclick="addTask()">Add Task</button>
+        <ol id="taskList">
+            <!--Tasks go here-->
+        </ol>
     </div>
 
 
