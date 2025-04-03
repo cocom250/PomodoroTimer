@@ -57,6 +57,7 @@ button:hover {
 }
 
 #addTaskBttn {
+    border-width: 1px;
     font-size: 12px;
     width: 100%;
     max-width: 95px;
