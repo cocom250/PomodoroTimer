@@ -14,6 +14,7 @@ body {
 }
 
 button {
+    transition: 200ms;
     margin: 10px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -22,7 +23,7 @@ button {
 }
 
 button:hover {
-    background-color:bisque;
+    opacity: 35%;
 }
 
 .container {
@@ -55,8 +56,15 @@ button:hover {
     justify-content: flex-start;
 }
 
+#addTaskBttn {
+    font-size: 12px;
+    width: 100%;
+    max-width: 95px;
+}
+
 input[type = "checkbox"] {
     margin-right: 10px;
+    cursor: pointer;
 }
 
 
